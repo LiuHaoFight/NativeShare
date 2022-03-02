@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-native-share",
+  "version": "1.0.0",
+  "description": "NativeShare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "cordova-plugin-native-share",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "share"
+  ],
+  "author": "Simon",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuHaoFight/NativeShare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LiuHaoFight/NativeShare/issues"
+  },
+  "homepage": "https://github.com/LiuHaoFight/NativeShare"
+}

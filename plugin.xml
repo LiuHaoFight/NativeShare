@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-native-share" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>NativeShare</name>
+    <js-module name="NativeShare" src="www/NativeShare.js">
+        <clobbers target="NativeShare" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="NativeShare">
+                <param name="android-package" value="com.siemens.plugins.NativeShare.NativeShare" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/NativeShare.java" target-dir="src/com/siemens/plugins/NativeShare" />
+
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="NativeShare">
+                <param name="ios-package" value="NativeShare" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/NativeShare.swift" />
+    </platform>
+
+    <dependency id="cordova-plugin-add-swift-support" version="2.0.1" />
+</plugin>
